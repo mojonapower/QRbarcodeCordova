@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1">
+    <title>Demo</title>
+    <link rel="stylesheet" href="css/jquery-ui.css">
+    <link rel="stylesheet" href="css/jquery.mobile-1.4.5.min.css">
+    <script type="text/javascript" charset="utf-8" src="cordova.js"></script>
+   <!--<script src="js/jquery-1.10.2.js"></script>-->
+   <script type="text/javascript" src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/jquery.mobile-1.4.5.min.js"></script>
+   <script src="js/funciones.js"></script>
+
+   <script src="js/jquery-ui.js"></script>  
+
+   <style>
+  .panel-content {
+    padding: 1em;
+  }
+
+.ui-panel-dismiss {
+    left: 273px !important;
+    /* for demo */
+    background-color: grey;
+    opacity: 0.5;
+}
+/* for demo */
+ .ui-panel-dismiss:after {
+    /*content:"dismissible!";*/
+    position: absolute;
+    color: red;
+    top: 40%;
+    left: 30%;
+    border: dotted 2px #0f0f0f;
+    border-radius: 15px;
+    padding: 10px;
+ } 
+  </style>
+<link rel="stylesheet" href="css/styles.css">  
+</head>
+<body>
+
+	<div data-role="page" id="pageBuscar">
+    <div class="img-head"></div>
+	
+		<!--lateral menu-->
+
+ 
+ <!--fin lateral menu-->
+ <div data-role="content" role="main">
+            	 <div id="areaTxt" align="center">
+            	 	<h1>Demo Barcode/QR</h1>
+ 		<table style="padding-left: 15px;">
+        			<tr>
+        				<td><strong>Resultado:</strong></td>
+        				
+        			</tr>
+        			<tr><td><label id="pCodigo"></label></td></tr>
+        			
+            	</table>
+            		<div style="text-align: center;">
+            	 		<input type="button" onclick="scanCode();" value="Leer Código Barra / QR" style="width: 90%;margin-top: 12px;">
+            	 	</div>
+            	</div>
+</div><!--content-->
+</div><!--page-->
+</body>
+</html> 
